@@ -5,8 +5,8 @@ body {
   flex-direction: column;
 }
 
-.header {
-  padding: 12px 250px;
+.header, .footer, .content {
+  padding: 0px 250px;
 }
 
 .header, .footer {
@@ -17,9 +17,10 @@ body {
 .navbar {
   display: flex;
   justify-content: space-between;
+  padding-top: 15px;
 }
 
-p, h1, ul {
+p, h1, h2, ul {
   padding: 0;
   margin: 0;
 }
@@ -30,17 +31,28 @@ ul {
   gap: 12px;
 }
 
-.header a {
+a {
   text-decoration: none;
-  color: #fff;
+}
+
+.header a, .intro p {
+  color: #E5E7EB;
+  font-size: 18px;
+}
+
+.intro h1 {
+  font-size: 48px;
+  font-weight: bolder;
+  color: #f9faf8;
 }
 
 .navbar p {
-  font-weight: 700;
+  font-size: 24px;
+  color: #f9faf8;
 }
 
 .header img {
-  height: 200px;
+  height: 225px;
   min-width: 365px;
 }
 
@@ -68,3 +80,34 @@ ul {
   color: #fff;
 }
 
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.content h2 {
+  padding: 35px;
+  font-size: 36px;
+  font-weight: bolder;
+  color: #1F2937;
+}
+
+.img-container img {
+  width: 175px;
+  border-radius: 18px;
+}
+
+.img-container div {
+  width: 175px;
+  text-align: center;
+}
+
+.img-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
