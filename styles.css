@@ -40,6 +40,10 @@ a {
   font-size: 18px;
 }
 
+a:hover {
+  color: #58759c;
+}
+
 .intro h1 {
   font-size: 48px;
   font-weight: bolder;
@@ -71,13 +75,15 @@ a {
   flex: 1;
 }
 
-.intro button {
+button {
   width: 100px;
   background-color: #3882F6;
   border: none;
   border-radius: 6px;
   padding: 7px 16px;
   color: #fff;
+  font-size: 18px;
+  font-weight: bold;
 }
 
 .content {
@@ -110,4 +116,65 @@ a {
   justify-content: center;
   flex-wrap: wrap;
   gap: 40px;
+  padding-bottom: 70px;
+}
+
+.quote-container {
+  background-color: #E5E7EB;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.quote {
+  padding: 100px 450px;
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
+  font-size: 36px; 
+  font-weight: 100;
+  font-style: italic;
+  color: #1F2937;
+}
+
+.author {
+  align-self: flex-end;
+  font-weight: bold;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#copyright {
+  padding: 50px;
+}
+
+.contact {
+  display: flex;
+  align-self: center;
+  justify-content: space-between;
+}
+
+.calltoaction {
+  background-color: #3882F6;
+  color: #f9faf8;
+  padding: 50px 250px;
+  margin: 100px 0;
+  border-radius: 8px;
+  display: flex;
+  gap: 100px;
+}
+
+.calltoaction button {
+  border: solid #f9faf8;
+}
+
+.calltoaction span {
+  font-weight: bold;
+  font-size: 20px;
 }
