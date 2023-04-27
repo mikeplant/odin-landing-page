@@ -6,7 +6,7 @@ body {
 }
 
 .header, .footer, .content {
-  padding: 0px 450px;
+  padding: 0px 220px;
 }
 
 .header, .footer {
@@ -16,7 +16,8 @@ body {
 
 .navbar {
   display: flex;
-  justify-content: space-between;
+  align-items: center;
+  justify-content: space-around;
   padding-top: 15px;
 }
 
@@ -29,6 +30,7 @@ ul {
   list-style-type: none;
   display: flex;
   gap: 12px;
+  margin-left: auto;
 }
 
 a {
@@ -58,6 +60,7 @@ button:hover {
 .navbar p {
   font-size: 24px;
   color: #f9faf8;
+  flex-shrink: 0;
 }
 
 .header img {
@@ -79,6 +82,11 @@ button:hover {
   flex-direction: column;
   justify-content: space-around;
   flex: 1;
+}
+
+.intro p {
+  padding-bottom: 25px;
+  padding-top: 25px;
 }
 
 button {
@@ -134,7 +142,7 @@ button {
 }
 
 .quote {
-  padding: 100px 450px;
+  padding: 100px 250px;
   display: flex;
   flex-direction: column;
 }
